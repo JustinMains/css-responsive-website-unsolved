@@ -87,11 +87,11 @@
   }
 
   .portfolio-img-wrapper {
-    width: 25%;
+    width: 100%;
   }
 
   .portfolio-item-info {
-    width: 60%;
+    width: 100%;
   }
   .portfolio-list { 
     flex-direction: column;
@@ -99,6 +99,10 @@
   .teammates-list-wrapper {
     flex-wrap: wrap; 
     justify-content: center; 
+  }
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
   }
 
   .teammate {
@@ -189,7 +193,7 @@
 }
   
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
-@media (min-width: 380px) and (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 767px) {
   .top-navigation ul {
     display: none;
   }
@@ -207,7 +211,7 @@
   }
 
   .portfolio-img-wrapper {
-    width: 65%; 
+    width: 100%; 
     
     
   }
@@ -229,6 +233,9 @@
     border: 1px solid #ccc;
     padding: 10px; 
   }
+  .teammates-content .subtext {
+    width: auto;
+  }
 
   .teammate-img-wrapper {
    width: 40%; 
@@ -240,6 +247,10 @@
     width: 120px; 
     height: 120px; 
     object-fit: cover;
+  }
+  .teammates-list:before,
+  .teammates-list:after {
+    display: none;
   }
 
   .teammate-data {
@@ -253,7 +264,7 @@
 
   .teammate-social-icons > div:hover .fa {
     color: white; 
-}
+  }
   .footer-contacts {
     flex-direction: column;
     align-items: center; 
@@ -272,8 +283,7 @@
   footer .social-icons > div {
     display: flex;
     align-items: center;          
-    justify-content: flex-start;  
-    width: 200px;                 
+    justify-content: flex-start;                   
     gap: 12px;                    
   }
   .footer-contacts .email a {
